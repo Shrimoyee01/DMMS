@@ -1,0 +1,15 @@
+@startuml PEDISENS
+start
+: Welcome;
+while (Create account and avatar)
+: Add name;
+: Create character/avatar;
+endwhile (created)
+
+' else (yes)
+if (Vibration occurs) then (yes)
+: Recieve data from sock;
+: Convert the vibration from the sock to visual data;
+if (Level 1) 
+stop
+@enduml
