@@ -1,15 +1,36 @@
 @startuml PEDISENS
+| |
 start
 : Welcome;
-while (Create account and avatar)
-: Add name;
-: Create character/avatar;
-endwhile (created)
+if (Create account and avatar) then (not created)
+    : Add name;
+    : Create character/avatar;
+else (has been created)
 
-' else (yes)
-if (Vibration occurs) then (yes)
-: Recieve data from sock;
-: Convert the vibration from the sock to visual data;
-if (Level 1) 
-stop
+endif
+: Instructions;
+
+
+   ' : try;
+    while (Level 1 - Easy) is (not completed)
+    : Vibration occurs;
+    : Recieve data from sock;
+    : Convert the vibration from the sock to visual data;
+    : Question placement of vibration;
+' repeat while (Level 1 Unsuccessful) is (unsuccessful) not (continue)
+endwhile (successfully completed)
+    while (Level 2)
+    endwhile (successfully completed)
+
+    while (Level 3)
+    endwhile (successfully completed)
+
+    while (Level 4)
+    endwhile (successfully completed)
+
+    while (Level 5)
+    endwhile (successfully completed)
+
+        
+ stop
 @enduml
