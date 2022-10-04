@@ -1,4 +1,4 @@
-@startuml PEDISENS
+@startuml 
 start
 : Welcome;
 if (Create account and avatar) then (not created)
