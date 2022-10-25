@@ -1,0 +1,61 @@
+@startuml PEDISENS
+start 
+: Welcome and loading page;
+if (Create account and avatar) then (not created)
+    : Set up login;
+    floating note right 
+    Include:
+    - email
+    - username 
+    - password
+    - option to create new account
+    - forgot username/password
+    end note
+    : Create character/avatar;
+else (has been created)
+
+endif
+: Put in user login;
+
+repeat
+    if (Choose a level) then (Previous level not completed)    
+    break
+    endif
+repeat while (Try again)
+
+    fork
+            : Level 1;
+        fork again
+            : Level 2;
+        fork again
+            : Level 3;
+        fork again
+            : Level 4;
+        fork again
+            : Level 5;
+        end merge
+
+repeat
+    : Vibration occurs;
+    : Recieve data from sock;
+    note right
+    Options include:
+    - long range bluetooth
+    - internet 
+    - SD card and cable connection
+    end note
+    : Ask for input from user;
+    : Convert the vibration to visual data;
+    : Display visual data on a foot on screen;
+        if (Input from user equals converted visual data) then (level completed successfully)
+            note right
+                You can choose to repeat this process and 
+                move to the next level or end and give users a break 
+                after successfully completing a level
+            end note
+        break 
+        else (wrong answer)
+        :Try again;
+        endif
+repeat while()
+end

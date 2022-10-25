@@ -1,0 +1,34 @@
+@startuml PEDISENS
+start 
+: Welcome;
+if (Create account and avatar) then (not created)
+    : Add name;
+    : Set up login;
+    : Create character/avatar;
+else (has been created)
+
+endif
+: Put in user login;
+repeat
+: Instructions;
+: Choose your level;
+
+    fork 
+        : Level 1;
+    fork again
+        : Level 2;
+    fork again
+        : Level 3;
+    fork again
+        : Level 4;
+    fork again
+        : Level 5;
+    end merge
+
+: Vibration occurs;
+: Recieve data from sock;
+: Convert the vibration from the sock to visual data (not viewable by user at the moment);
+repeat while (Question of the placement of vibration is asked) is (correct answer) 
+        
+stop
+@enduml
