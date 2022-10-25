@@ -1,6 +1,7 @@
 # Gamification
 
-pedisensv1.plantuml
+pedisens.plantuml --> raw version, without steps
+pedisensv1.plantuml --> finalised version, with detailed steps and notes
 
 
 **Notes**
