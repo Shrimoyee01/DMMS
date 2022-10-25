@@ -11,4 +11,5 @@ pedisensv1.plantuml --> finalised version, with detailed steps and notes
 4. Use https://plantuml.com/ as a reference to make changes
 
 
-![image](https://user-images.githubusercontent.com/61573269/197786775-744c1c4f-5b53-4793-aec7-f617505d854c.png)
+![image](https://user-images.githubusercontent.com/61573269/197787403-70b9cae0-2479-497b-9cec-ceb60653c6a0.png)
+
